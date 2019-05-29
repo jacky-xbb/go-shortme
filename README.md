@@ -1,6 +1,6 @@
 # go-shortme
 
-> A URL shortener service encodes URL in base62 and store them in Redis.   
+> A URL shortener service encodes URLs in base62 and store them in Redis.   
 It has 3 features: shorten, info of shortened URL and redirect.
 
 ## API Endpoints
