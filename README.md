@@ -26,7 +26,7 @@ It has 3 features: shorten, info of shortened URL and redirect.
 
 2. Get info of shortened URL
 
-`GET /api/info`
+`GET /api/info?shortlink=shortlink`
 
 **Params:**
 
