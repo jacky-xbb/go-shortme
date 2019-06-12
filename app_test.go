@@ -17,7 +17,7 @@ var mockR *storageMock
 
 const (
 	expTime       = 60
-	longURL       = "https://wwww.example.com"
+	longURL       = "https://www.example.com"
 	shortLink     = "IFHzaO"
 	shortLinkInfo = `{"url": "https://wwww.example.com", "created_at": "2017-06-09 16:53:00.144421 +0800 CST", "expiration_in_minutes": 60}`
 )
@@ -49,7 +49,7 @@ func init() {
 
 func TestCreateShortlink(t *testing.T) {
 	var jsonStr = []byte(`{
-		"url": "https://wwww.example.com",
+		"url": "https://www.example.com",
 		"expiration_in_minutes": 60}`)
 	req, err := http.NewRequest("POST", "/api/shorten", bytes.NewBuffer(jsonStr))
 	req.Header.Set("Content-Type", "application/json")
