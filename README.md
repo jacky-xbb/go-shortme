@@ -14,7 +14,7 @@ It has 3 features: shorten, info of shortened URL and redirect.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | `url`  | `string` | `Required. URL to shorten. e.g. https://www.example.com` |
-| `expiration_in_minutes` | `int` | `Required. expiration of short link in minutes. e.g. value 0 represents ` |
+| `expiration_in_minutes` | `int` | `Required. expiration of short link in minutes. e.g. value 0 represents permanent` |
 
 **Response:**
 
@@ -26,7 +26,7 @@ It has 3 features: shorten, info of shortened URL and redirect.
 
 2. Get info of shortened URL
 
-`GET /api/info`
+`GET /api/info?shortlink=shortlink`
 
 **Params:**
 
