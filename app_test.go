@@ -77,7 +77,7 @@ func TestCreateShortlink(t *testing.T) {
 	}
 }
 
-func TestReriect(t *testing.T) {
+func TestRedirect(t *testing.T) {
 	r := fmt.Sprintf("/%s", shortLink)
 	req, err := http.NewRequest("GET", r, nil)
 	if err != nil {
